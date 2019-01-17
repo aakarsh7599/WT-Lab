@@ -1,0 +1,16 @@
+nav{
+    display: block;
+    text-decoration: none;
+}
+
+.first{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+}
+
+.third{
+    border: 1px solid black;
+    margin-right: 1px;
+}
