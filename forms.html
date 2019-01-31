@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form-16021673761</title>
+        <script>
+function validateForm() {
+  var x = document.forms["form"]["firstname"].value;
+  if (x == "") {
+    alert("Please fill out the name!");
+    return false;
+  }
+}
+</script>
+    </head>
+    
+    <body>
+        <form name="form" action="/forms.html" onsubmit="return validateForm()" method="post">
+            <h1><center>STUDENT REGISTRATION FORM</center></h1>
+        <table style="background-color:blueviolet;" align="center" cellpadding="10">
+            <tr>
+                <td><b>FIRST NAME</b></td>
+                <td><input style="border-radius: 15px" type="text" name="firstname" maxlength="30" placeholder="max 30 characters"></td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input style="border-radius: 15px" type="text" name="lastname" maxlength="30" placeholder="max 30 characters"></td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td>
+                    <input style="border-radius: 15px" type="date" name="dob" maxlength="30">
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input style="border-radius: 15px" type="text" name="emailid"maxlength="30"></td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td><input style="border-radius: 15px" type="tel" name="emailid"maxlength="30" placeholder="10 digit"></td>
+            </tr>
+            <tr>
+    
+            <td>GENDER</td>
+            <td>
+                Male <input type="radio" name="Gender" value="Male" />
+                Female <input type="radio" name="Gender" value="Female" />
+            </td>
+        </tr>
+         <tr>
+             <td>ADDRESS</td>
+             <td><textarea style="border-radius: 15px" name="address"  rows="4" cols="28"></textarea>
+             </td>
+            </tr> 
+            <tr>
+                <td>CITY</td>
+                <td><input style="border-radius: 15px" type="text" name="city" maxlength="30" placeholder="max 30 characters"></td>
+                
+            </tr>
+            <tr>
+                <td>PINCODE</td>
+                <td><input style="border-radius: 15px" type="text" name="pincode" maxlength="6" placeholder="6 digit"></td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input style="border-radius: 15px" type="text" name="state" maxlength="30" placeholder="max 30 characters"></td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input style="border-radius: 15px" type="text" name="country" value=""  ></td>
+                
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td><input type="checkbox" name="hobbies" value="drawing">Drawing
+                <input type="checkbox" name="hobbies" value="singing">Singing
+                <input type="checkbox" name="hobbies" value="dancing">Dancing
+                <input type="checkbox" name="hobbies" value="sketching">Sketching<br>
+                <input type="checkbox" name="hobbies" value="others">Others
+                <input style="border-radius: 15px" type="text" name="hobbies" value="" placeholder="Mention if others">
+                
+            </tr>
+            
+            <tr>
+                <td>Qualifications</td>
+                <td>
+                    <table style="background-color:blueviolet;" cellpadding="1">
+                        <tr>
+                            <td>SI.No.</td>
+                            <td>Examination</td>
+                            <td><center>Board</center></td>
+                            <td><center>Percentage</center></td>
+                            <td><center>Year of Passing</center></td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Class X</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Class XII</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Graduation</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Masters</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        
+                    </table>
+                </td>
+                
+            </tr>
+            <tr>
+                            <td>Courses Applied For</td>
+                            <td>
+                                BCA <input type="radio" name="course" value="BCA" />
+                                BCOM <input type="radio" name="course" value="BCOM" />
+                                B.Sc <input type="radio" name="course" value="BSC" />
+                                B.A <input type="radio" name="course" value="BA" />
+                            </td>
+                        </tr>
+
+            
+            <tr>
+                <td>  </td>
+                <td>
+                    <button type="submit">Submit</button>
+                
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+
+</html>
